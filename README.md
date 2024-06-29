@@ -108,7 +108,7 @@ java -cp "lib/*" run.server.Server
 ```
 
 With option '-f' followed by a file name it is possible to set a different server configuration file.
-With option '-v' or '-vv' it is possible tu run the server in _verbose_ or _very verbose_ mode, respectively.
+With option '-v' or '-vv' it is possible to run the server in _verbose_ or _very verbose_ mode, respectively.
 
 Use '-h' to list all possible command-line options.
 
