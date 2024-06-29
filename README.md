@@ -30,6 +30,8 @@ java -cp "lib/*" run.server.Server -f cfg/server-alt.cfg
 
 You could start by using the default `server.cfg` file already present within the `cfg` folder. In general the only field that you may be interested in configured is the 'allowedGateways', that specifies the EUIs of the gateways that are authorized to connect to (and exchange messages with) the server. However, if the field is not present, any gateway can connect to the server.
 
+Probably the only other configuration that you have to set is within the `server-devices.json` file (or equivalent, if you changed the name in the `deviceFile` filed of the server configuration file), that specifies the configuration of the registered devices (DevEUI, JoinEUI, and AppKey). See below for datails.
+
 
 The default `server.cfg` file contains the following configuration (note that character '#' can be used to comment a line):
 ```
@@ -80,7 +82,7 @@ The `homeNetId` field specifies the identifier of the LoRaWAN network administra
 
 The `port` field specifies the UDP port where the Network Server listen for packets sent by the LoRaWAN gateways. Currently the standard Semtech protocol is used between by the gateways for communicationg with the Network Server. UDP port 1700 is the default one and can be also omitted.
 
-The `deviceFile` field specifies the name of the file that list the registered devices. The default value is `cfg/server-devices.json`. See below for more details.
+The `deviceFile` field specifies the name of the file that list the registered devices. The default value is `cfg/server-devices.json`. This JSON file contains the setting of the registered devices (DevEUI, JoinEUI, and AppKey). 
 
 The `stateFile` field specifies the name of the file used to store the server state. This is used when you want to stop and restart the server without loosing the curent state (associated gateways, joined devices, etc.).
 
@@ -92,10 +94,21 @@ The `log` field specifies the file used to write log message, the numbef of file
 
 Then there are three fields `httpConnector`, `coapConnector`, and  `mqttConnector` for configuring three possible different interfaces that can be used by external applications for receiving and/or sending data from/to LoRaWAN devices.
 
-The various interface sub-fields are almost straitforward.
+The various interface sub-fields are almost straightforward.
+
+
 
 
 
 ## Running the server
 
-[TODO]
+Once the configuration files are correctly set, you can run the server by using the following command:
+```
+java -cp "lib/*" run.server.Server
+```
+
+With option '-f' followed by a file name it is possible to set a different server configuration file.
+With option '-v' or '-vv' it is possible tu run the server in _verbose_ or _very verbose_ mode, respectively.
+
+Use '-h' to list all possible command-line options.
+
