@@ -1,6 +1,6 @@
 # Lorawan Server
 
-LoRaWAN server is an all-in-one LoRaWAN platform that acts as Network Server, Join Server and App Server, intergated into a single application.
+This is an all-in-one LoRaWAN server platform that acts as Network Server, Join Server and App Server, intergated into a single application.
 
 It provides a simple HTTP interface to monitor the server, by watching the connected gateways, the joined devices, and the received device data.
 In addition, three different interfaces (based on MQTT, HTTP, and CoAP protocols) are provided for receiving and sending data from/to the devices.
