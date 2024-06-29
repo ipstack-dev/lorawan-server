@@ -2,8 +2,8 @@
 
 This is an all-in-one LoRaWAN server platform that acts as Network Server, Join Server and App Server, intergated into a single application.
 
-It provides a simple HTTP interface to monitor the server, by watching the connected gateways, the joined devices, and the received device data.
-In addition, three different interfaces (based on MQTT, HTTP, and CoAP protocols) are provided for receiving and sending data from/to the devices.
+A simple HTTP REST interface is available to monitor the server, by watching the connected gateways, the joined devices, and the received device data.
+In addition, three different interfaces (based on MQTT, HTTP, and CoAP) are available for receiving and sending data from/to the devices that are connected via one or more LoRaWAN gateways.
 
 Running the LoRaWAN server is very simple and all you need is:
 
