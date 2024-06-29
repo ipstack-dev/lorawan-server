@@ -1,6 +1,6 @@
 # Lorawan Server
 
-LoRaWAN server platform, intergating in a single application a Network Server, a Join Server, and an Application Server.
+LoRaWAN server platform, intergating in a single application a LoRaWAN Network Server, Join Server, and Application Server.
 
 Running the LoRaWAN server is very simple and all you need is:
 - the jar files located in the `lib`;
