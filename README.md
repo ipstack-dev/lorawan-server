@@ -1,4 +1,4 @@
-# Lorawan Server
+# ipstack LWAN Server
 
 This is an all-in-one LoRaWAN server platform that acts as Network Server, Join Server and App Server, intergated into a single application.
 
